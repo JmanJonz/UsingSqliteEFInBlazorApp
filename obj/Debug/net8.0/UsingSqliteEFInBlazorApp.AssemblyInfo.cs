@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UsingSqliteEFInBlazorApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+81547ff6bac6bc83544a569f27e2ba1cba214a97")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0fde8b04a6f20edc56478b2fcb94dcf7817594ac")]
 [assembly: System.Reflection.AssemblyProductAttribute("UsingSqliteEFInBlazorApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UsingSqliteEFInBlazorApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,10 +1,20 @@
 using UsingSqliteEFInBlazorApp.Components;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
+
+// Add services to the container.
+builder.Services.AddDbContext<TodoDbContext>(options =>
+{
+    options.UseSqlite("Data Source=todolist.db"); // Specify SQLite database file
+});
+
+// register todoservice that has prebuilt crud methods 
+builder.Services.AddScoped<ITodoService, TodoService>();
 
 var app = builder.Build();
 

@@ -1,0 +1,21 @@
+﻿@page "/"
+@inject ITodoService TodoService
+
+<PageTitle>Home</PageTitle>
+
+<h1>Interacting With SQLite In Blazor Application</h1>
+
+<ul>
+    @foreach(var item in myList){
+        <li>@item</li>
+    }
+</ul>
+
+@code{
+    private List<TodoItem> todos = new List<TodoItem>();
+    public async Task AddTodo(TodoItem todo){
+        await TodoService.AddTodo(todo);
+        todos = await TodoService.GetTodos();
+    }
+    private List<string> myList = new List<string>() {"Item 1", "Item 2", "Item 3", "i 4"};
+}
