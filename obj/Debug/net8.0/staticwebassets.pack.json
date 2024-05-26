@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\wjssa\\OneDrive\\Code Repositories\\School Code Repositories\\.Net Software Development\\UsingSqliteEFInBlazorApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\UsingSqliteEFInBlazorApp.bundle.scp.css",
+      "PackagePath": "staticwebassets\\UsingSqliteEFInBlazorApp.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\wjssa\\OneDrive\\Code Repositories\\School Code Repositories\\.Net Software Development\\UsingSqliteEFInBlazorApp\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\wjssa\\OneDrive\\Code Repositories\\School Code Repositories\\.Net Software Development\\UsingSqliteEFInBlazorApp\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\wjssa\\OneDrive\\Code Repositories\\School Code Repositories\\.Net Software Development\\UsingSqliteEFInBlazorApp\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\wjssa\\OneDrive\\Code Repositories\\School Code Repositories\\.Net Software Development\\UsingSqliteEFInBlazorApp\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.UsingSqliteEFInBlazorApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.UsingSqliteEFInBlazorApp.props",
+      "PackagePath": "build\\UsingSqliteEFInBlazorApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.UsingSqliteEFInBlazorApp.props",
+      "PackagePath": "buildMultiTargeting\\UsingSqliteEFInBlazorApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.UsingSqliteEFInBlazorApp.props",
+      "PackagePath": "buildTransitive\\UsingSqliteEFInBlazorApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
