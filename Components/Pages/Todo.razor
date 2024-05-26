@@ -5,16 +5,24 @@
 
 <h1>Interacting With SQLite In Blazor Application</h1>
 
+<EditForm Model="@newTodo" OnSubmit="@(() => AddTodo())" FormName="myEditForm">
+  <InputText @bind-Value="newTodo.Title" placeholder="Enter new todo..." />
+  <ValidationMessage For="@(() => newTodo.Title)" />
+  <button type="submit">Add Todo</button>
+</EditForm>
+
+
 <ul>
-    @foreach(var item in myList){
-        <li>@item</li>
+    @foreach(var item in todos){
+        <li>@item.Title</li>
     }
 </ul>
 
 @code{
+    private TodoItem newTodo = new TodoItem {Title = "workingish"};
     private List<TodoItem> todos = new List<TodoItem>();
-    public async Task AddTodo(TodoItem todo){
-        await TodoService.AddTodo(todo);
+    public async Task AddTodo(){
+        await TodoService.AddTodo(newTodo);
         todos = await TodoService.GetTodos();
     }
     private List<string> myList = new List<string>() {"Item 1", "Item 2", "Item 3", "i 4"};
