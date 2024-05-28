@@ -1,16 +1,13 @@
-﻿@page "/"
+﻿@rendermode InteractiveServer
+@page "/"
 @inject ITodoService TodoService
 
 <PageTitle>Home</PageTitle>
 
 <h1>Interacting With SQLite In Blazor Application</h1>
 
-<EditForm Model="@newTodo" OnSubmit="@(() => AddTodo())" FormName="myEditForm">
-  <InputText @bind-Value="newTodo.Title" placeholder="Enter new todo..." />
-  <ValidationMessage For="@(() => newTodo.Title)" />
-  <button type="submit">Add Todo</button>
-</EditForm>
-
+<input type="text" @bind=todoTitle>
+<button @onclick="AddTodo">Add Todo</button>
 
 <ul>
     @foreach(var item in todos){
@@ -19,11 +16,16 @@
 </ul>
 
 @code{
-    private TodoItem newTodo = new TodoItem {Title = "workingish"};
+    public string todoTitle = "";
+    private TodoItem newTodo = new TodoItem {Title = ""};
     private List<TodoItem> todos = new List<TodoItem>();
     public async Task AddTodo(){
+        Console.WriteLine($"New Todo: {todoTitle}");
+        newTodo.Title = todoTitle;
         await TodoService.AddTodo(newTodo);
+        newTodo.Title = "";
         todos = await TodoService.GetTodos();
+        StateHasChanged();
     }
     private List<string> myList = new List<string>() {"Item 1", "Item 2", "Item 3", "i 4"};
 }
